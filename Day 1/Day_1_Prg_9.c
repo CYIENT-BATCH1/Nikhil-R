@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+int ip1,ip2,op;
+printf("AND gate\n");
+for(int i=0;i<4;i++)
+{
+printf("enter the two inputs: ");
+scanf("%d %d",&ip1,ip2);
+op=ip1 & ip2;
+printf("%d",op);
+printf("\n");
+}
+printf("OR gate\n");
+for(int i=0;i<4;i++)
+{
+printf("enter the two inputs: ");
+scanf("%d %d",&ip1,ip2);
+op=ip1 | ip2;
+printf("%d",op);
+printf("\n");
+}
+printf("NOT gate\n");
+for(int i=0;i<2;i++)
+{
+printf("enter inputs: ");
+scanf("%d",&ip1);
+op=!ip1;
+printf("%d",op);
+printf("\n");
+}
